@@ -45,7 +45,7 @@ function generatePassword() {
     availableChars = availableChars.concat(["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"]);
   }
   if (includeSpecial) {
-    availableChars = availableChars.concat(["!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "-", "_", "=", "+", "<", ">", "/", "?", "{", "}", "[", "]"]);
+    availableChars = availableChars.concat([" ", "!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "-", "_", "=", "+", "<", ">", "/", "?", ":", ";", "[", "]", "'", "{", "}", "|", "~", "`"]);
   }
 
   // Concatenate password with one available char, till desired length is reached 
