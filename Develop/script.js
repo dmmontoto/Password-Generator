@@ -36,17 +36,26 @@ function generatePassword() {
 
   // Add characters that were selected
   if (includeLowercase) {
-    availableChars.concat(["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]);
+    availableChars = availableChars.concat(["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]);
   }
   if (includeUppercase) {
-    availableChars.concat(["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]);
+    availableChars = availableChars.concat(["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]);
   }
   if (includeNumeric) {
-    availableChars.concat(["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"]);
+    availableChars = availableChars.concat(["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"]);
   }
   if (includeSpecial) {
-    availableChars.concat(["!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "-", "_", "=", "+", "<", ">", "/", "?", "{", "}", "[", "]"]);
+    availableChars = availableChars.concat(["!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "-", "_", "=", "+", "<", ">", "/", "?", "{", "}", "[", "]"]);
   }
+
+  // Concatenate password with one available char, till desired length is reached 
+  for (var i = 0; i < passwordLength; i++) {
+    var RandomCharIdx = Math.floor(Math.random() * availableChars.length);
+    password += availableChars[RandomCharIdx];
+  }
+
+  // Return generated password
+  return password;
 }
 
 // Get references to the #generate element
