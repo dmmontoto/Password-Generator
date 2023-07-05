@@ -10,6 +10,25 @@ function generatePassword() {
   }
 
   // Prompts for preferred character types
+
+  // Prompt for whether or not user wants lowercases included
+  var includeLowercase = prompt("Include lowercase characters? (yes or no)").toLowerCase() === "yes";
+
+  // Prompt for whether or not user wants uppercases included
+  var includeUppercase = prompt("Inlcude uppercase characters? (yes or no)").toLowerCase() === "yes";
+
+  // Prompt for whether or not user wants numeric characters included
+  var includeNumeric = prompt("Include numeric characters? (yes or no)").toLowerCase() === "yes";
+
+  // Prompt for whether or not user wants special characters included
+  var includeSpecial = prompt("Include special characters? (yes or no)").toLowerCase() === "yes";
+
+  // Validate acceptable character type selection
+  if (!includeLowercase && !includeUppercase && !includeNumeric && !includeSpecial) {
+    alert("At least one character type must be selected.");
+    // Exit the funciton call if no character type is selected
+    return;
+  }
 }
 
 // Get references to the #generate element
