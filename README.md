@@ -12,10 +12,12 @@ Various websites often require passwords differing in length. By first asking fo
 Feel free to try this password generator out yourself!
 [Password Generator]( "Password Generator").
 
-The prompts are presented as alerts on the browser, similar to the image contained below.
-![markdown logo]()
+The prompts are presented as alerts on the browser, similar to the images contained below.
+![markdown logo](assets/images/Password-Generator-Alert.png)
+
+![markdown logo](assets/images/Password-Generator-Alert2.png)
 
 The password is completed and presented on the webpage, within the given box.
-![markdown logo]()
+![markdown logo](assets/images/Generated-Password.png)
 
 
