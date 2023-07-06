@@ -10,7 +10,7 @@ Various websites often require passwords differing in length. By first asking fo
 * Special Characters
 
 Feel free to try this password generator out yourself!
-[Password Generator]( "Password Generator").
+[Password Generator](https://dmmontoto.github.io/Password-Generator/ "Password Generator").
 
 The prompts are presented as alerts on the browser, similar to the images contained below.
 
