@@ -14,12 +14,12 @@ Feel free to try this password generator out yourself!
 
 The prompts are presented as alerts on the browser, similar to the images contained below.
 
-![markdown logo](Develop/assets/images/Password-Generator-Alert.png)
+![markdown logo](assets/images/Password-Generator-Alert.png)
 
-![markdown logo](Develop/assets/images/Password-Generator-Alert2.png)
+![markdown logo](assets/images/Password-Generator-Alert2.png)
 
 The password is completed and presented on the webpage, within the given box.
 
-![markdown logo](Develop/assets/images/Generated-Password.png)
+![markdown logo](assets/images/Generated-Password.png)
 
 
